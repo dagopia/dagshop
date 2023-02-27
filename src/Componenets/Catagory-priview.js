@@ -1,3 +1,5 @@
+import { Box } from "@mui/system";
+import { NavLink } from "react-router-dom";
 import ProductCard from "../Componenets/card";
 
 import "./category-preview.styles.scss";
@@ -6,7 +8,9 @@ const CatagoryPriview = ({ title, products }) => {
   return (
     <div className='category-preview-container'>
       <h2>
-        <span className='title'>{title.toUpperCase()}</span>
+        <Box className='title' to={title} component={NavLink}>
+          {title.toUpperCase()}
+        </Box>
       </h2>
       <div className='preview'>
         {products

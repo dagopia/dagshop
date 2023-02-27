@@ -9,6 +9,8 @@ export const Catagory = () => {
   const { CatagoriesMap } = useContext(CatagoriesContext);
   const [products, setProducts] = useState(CatagoriesMap[catagory]);
 
+  console.log("Params val : " + catagory);
+
   useEffect(() => {
     setProducts(CatagoriesMap[catagory]);
   }, [catagory, CatagoriesMap]);
