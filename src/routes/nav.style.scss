@@ -1,0 +1,54 @@
+.logo {
+  width: 50px;
+}
+.navigation {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+
+  background-color: white;
+
+  .logo-container {
+    height: 100%;
+    width: 70px;
+    padding: 25px;
+  }
+
+  .nav-links-container {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .nav-link {
+      padding: 10px 15px;
+      cursor: pointer;
+    }
+  }
+}
+.nav-link a:active {
+  color: #8fcf72;
+}
+.Signin-container {
+  color: black;
+}
+
+.bg-img {
+  overflow: hidden;
+  margin-left: 25px;
+  text-align: left;
+  background-repeat: round;
+  background-image: url("https://plus.unsplash.com/premium_photo-1664202526486-f09e4b1961d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTYzfHxzaG9wfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+}
+.bg-img:before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background: inherit;
+
+  filter: blur(3px);
+}
