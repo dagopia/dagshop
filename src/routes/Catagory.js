@@ -1,3 +1,4 @@
+import { Grid } from "@mui/material";
 import { Box } from "@mui/system";
 import { useContext, useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
@@ -16,12 +17,14 @@ export const Catagory = () => {
   }, [catagory, CatagoriesMap]);
 
   return (
-    <Box sx={{}}>
+    <Grid container spacing={2} sx={{ m: 2 }}>
       {products &&
         products.map((product) => (
-          <ProductCard key={product.id} product={product} />
+          <Grid xs={12} md={3} lg={3}>
+            <ProductCard key={product.id} product={product} />
+          </Grid>
         ))}
-    </Box>
+    </Grid>
   );
 };
 

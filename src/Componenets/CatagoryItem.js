@@ -32,16 +32,16 @@ const CatagoryItem = () => {
     },
   ];
   return (
-    <div className="catagories-container">
+    <div className='catagories-container'>
       {catagories.map(({ title, id, imageUrl }) => (
-        <div className="Catagory-container" key={id}>
+        <div className='Catagory-container' key={id}>
           <div
-            className="background-image"
+            className='background-image'
             style={{
               backgroundImage: `url(${imageUrl})`,
             }}
           />
-          <div className="catagory-body-container">
+          <div className='catagory-body-container'>
             <h2>{title}</h2>
             <p>Shop Now!</p>
           </div>
