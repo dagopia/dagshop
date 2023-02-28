@@ -1,4 +1,4 @@
-import { Paper } from "@mui/material";
+import { Box, Paper } from "@mui/material";
 import { Outlet } from "react-router";
 import { DescriptionCard } from "../Componenets/card";
 const Home = () => {
@@ -54,10 +54,10 @@ const Home = () => {
   ];
   return (
     <>
-      <div className='catagories-container'>
+      <Box className='catagories-container' sx={{}}>
         <Outlet />
         {catagories.map(({ title, id, imageUrl }) => (
-          <Paper className='Catagory-container' key={id} sx={{}}>
+          <Paper className='Catagory-container' key={id}>
             <div
               className='background-image'
               style={{
@@ -70,7 +70,7 @@ const Home = () => {
             </div>
           </Paper>
         ))}
-      </div>
+      </Box>
     </>
   );
 };
