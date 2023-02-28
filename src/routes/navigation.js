@@ -33,6 +33,9 @@ const Nav = () => {
             </Link>
           )}
 
+          <Link className='nav-link' to='/contact'>
+            Contact
+          </Link>
           <Link className='nav-link'>
             <CartIcon />
           </Link>
