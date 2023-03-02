@@ -40,12 +40,23 @@ const Nav = () => {
               </Link>
             </Grid>
           )}
+<<<<<<< HEAD
           <Grid xs={12} md={3} lg={3}>
             <Link className='nav-link'>
               <CartIcon />
             </Link>
           </Grid>
         </Grid>
+=======
+
+          <Link className='nav-link' to='/contact'>
+            Contact
+          </Link>
+          <Link className='nav-link'>
+            <CartIcon />
+          </Link>
+        </div>
+>>>>>>> 22e20e1e859caf78639a9b760097c7d7e3dac9ec
         {isCartopen && <CartDropdown />}
       </Grid>
       <Outlet />

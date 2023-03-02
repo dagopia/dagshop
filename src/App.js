@@ -9,6 +9,7 @@ import Authentication from "./routes/Authentication";
 import Shop from "./routes/Shop";
 import { SignUpForm } from "./Componenets/SignUp.Form";
 import Checkout from "./routes/CheckOut/checkout";
+import Contact from "./routes/contact";
 const App = () => {
   return (
     <>
@@ -19,6 +20,7 @@ const App = () => {
           <Route path='auth' element={<Authentication />} />
           <Route path='signup' element={<SignUpForm />} />
           <Route path='checkout' element={<Checkout />} />
+          <Route path='contact' element={<Contact />} />
         </Route>
       </Routes>
     </>
