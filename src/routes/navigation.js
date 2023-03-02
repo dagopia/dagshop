@@ -8,37 +8,46 @@ import { signOutUser } from "../utils/Firebase";
 import CartIcon from "../Componenets/cart/cart";
 import CartDropdown from "../Componenets/cart-dropdown/cartDropdown";
 import { CartContext } from "../context/cart.context";
+import { Grid } from "@mui/material";
 
 const Nav = () => {
   const { currentUser } = useContext(UserContext);
   const { isCartopen } = useContext(CartContext);
   return (
     <Fragment>
-      <div className='navigation'>
-        <Link className='logo-container' to='/'>
-          <img src={Dlogo} className='logo' alt="Dagis'Mart" />
-        </Link>
-        <div className='nav-links-container'>
-          <Link className='nav-link' to='/shop'>
-            SHOP
+      <Grid container spacing={0} className='navigation'>
+        <Grid xs={12} md={3} lg={3}>
+          <Link className='logo-container' to='/'>
+            <img src={Dlogo} className='logo' alt="Dagis'Mart" />
           </Link>
+        </Grid>
+
+        <Grid container spacing={0} className='nav-links-container'>
+          <Grid xs={12} md={3} lg={3}>
+            <Link className='nav-link' to='/shop'>
+              SHOP
+            </Link>
+          </Grid>
           {currentUser ? (
             <span className='nav-link' onClick={signOutUser}>
               {" "}
               SIGN OUT{" "}
             </span>
           ) : (
-            <Link className='nav-link' to='/auth'>
-              SIGN IN
-            </Link>
+            <Grid xs={12} md={3} lg={3}>
+              <Link className='nav-link' to='/auth'>
+                SIGN IN
+              </Link>
+            </Grid>
           )}
-
-          <Link className='nav-link'>
-            <CartIcon />
-          </Link>
-        </div>
+          <Grid xs={12} md={3} lg={3}>
+            <Link className='nav-link'>
+              <CartIcon />
+            </Link>
+          </Grid>
+        </Grid>
         {isCartopen && <CartDropdown />}
-      </div>
+      </Grid>
       <Outlet />
     </Fragment>
   );
