@@ -100,7 +100,7 @@ export const SignUpForm = () => {
             alignItems: "center",
           }}
         >
-          <Avatar sx={{ m: 1, bgcolor: "primary.main" }}>
+          <Avatar sx={{ m: 1, bgcolor: "#ff1d58" }}>
             <LockOutlinedIcon />
           </Avatar>
           <Typography component='h1' variant='h5'>
@@ -170,7 +170,7 @@ export const SignUpForm = () => {
             </Button>
             <Grid container justifyContent='flex-end'>
               <Grid item>
-                <Link href={<SignInForm />} variant='body2'>
+                <Link href='signin' variant='body2' to='/signin'>
                   Already have an account? Sign in
                 </Link>
               </Grid>

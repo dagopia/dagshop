@@ -103,7 +103,7 @@ export const SignInForm = () => {
             alignItems: "center",
           }}
         >
-          <Avatar sx={{ m: 1, bgcolor: "primary.main" }}>
+          <Avatar sx={{ m: 1, bgcolor: "#ff1d58" }}>
             <LockOutlinedIcon />
           </Avatar>
           <Typography component='h1' variant='h5' sx={{ mt: "3" }}>
@@ -135,16 +135,18 @@ export const SignInForm = () => {
               onChange={handleChange}
             />
 
-            <Button
-              variant='contained'
-              onClick={signInWithGoogle}
-              fullWidth
-              variant='contained'
-              sx={{ mt: 3, mb: 2 }}
-            >
-              Google signin
-            </Button>
-            {/* <Button
+            <Grid container spacing={1}>
+              <Grid xs={12} md={6} lg={6}>
+                <Button
+                  variant='contained'
+                  onClick={signInWithGoogle}
+                  fullWidth
+                  variant='contained'
+                  sx={{ my: 2 }}
+                >
+                  Google signin
+                </Button>
+                {/* <Button
               variant='contained'
               onClick={logGoogleRedirectUser}
               type='submit'
@@ -154,15 +156,19 @@ export const SignInForm = () => {
             >
               Sign In with Redirect
             </Button> */}
-            <Button
-              variant='contained'
-              type='submit'
-              fullWidth
-              variant='contained'
-              sx={{ mt: 3, mb: 2 }}
-            >
-              Sign In
-            </Button>
+              </Grid>
+              <Grid xs={12} md={6} lg={6}>
+                <Button
+                  variant='contained'
+                  type='submit'
+                  fullWidth
+                  variant='contained'
+                  sx={{ m: 2 }}
+                >
+                  Sign In
+                </Button>
+              </Grid>
+            </Grid>
             <Grid container>
               <Grid item xs>
                 <Link href='#' variant='body2'>
@@ -170,7 +176,7 @@ export const SignInForm = () => {
                 </Link>
               </Grid>
               <Grid item>
-                <Link href={<SignUpForm />} variant='body2'>
+                <Link href='/signup' variant='body2' to='/signup'>
                   {"Don't have an account? Sign Up"}
                 </Link>
               </Grid>
