@@ -11,6 +11,7 @@ import { SignUpForm } from "./Componenets/SignUp.Form";
 import Checkout from "./routes/CheckOut/checkout";
 import Contact from "./routes/contact";
 import { Box } from "@mui/system";
+import { SignInForm } from "./Componenets/signInForm";
 const App = () => {
   return (
     <Box sx={{}}>
@@ -20,6 +21,8 @@ const App = () => {
           <Route path='shop/*' element={<Shop />} />
           <Route path='auth' element={<Authentication />} />
           <Route path='signup' element={<SignUpForm />} />
+          <Route path='signin' element={<SignInForm />} />
+
           <Route path='checkout' element={<Checkout />} />
           <Route path='contact' element={<Contact />} />
         </Route>
