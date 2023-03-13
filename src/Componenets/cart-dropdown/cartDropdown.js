@@ -22,7 +22,15 @@ const CartDropdown = () => {
       </div>
       <Button
         variant='contained'
-        sx={{ color: "white", bgcolor: "black" }}
+        sx={{
+          mx: 2,
+          bgcolor: "#ff1d58",
+          fontWeight: "bold",
+          "&.MuiButtonBase-root:hover": {
+            bgcolor: "transparent",
+            color: "#ff1d58",
+          },
+        }}
         onClick={goToCheckoutHandler}
       >
         Go To Checkout

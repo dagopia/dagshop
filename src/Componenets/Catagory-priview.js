@@ -8,7 +8,12 @@ const CatagoryPriview = ({ title, products }) => {
   return (
     <div className='category-preview-container'>
       <h2>
-        <Box className='title' to={title} component={NavLink}>
+        <Box
+          className='title'
+          to={title}
+          component={NavLink}
+          sx={{ color: "#F65A83", ml: 2 }}
+        >
           {title.toUpperCase()}
         </Box>
       </h2>

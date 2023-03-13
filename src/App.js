@@ -10,9 +10,10 @@ import Shop from "./routes/Shop";
 import { SignUpForm } from "./Componenets/SignUp.Form";
 import Checkout from "./routes/CheckOut/checkout";
 import Contact from "./routes/contact";
+import { Box } from "@mui/system";
 const App = () => {
   return (
-    <>
+    <Box sx={{}}>
       <Routes>
         <Route path='/' element={<Nav />}>
           <Route index element={<Home />} />
@@ -23,7 +24,7 @@ const App = () => {
           <Route path='contact' element={<Contact />} />
         </Route>
       </Routes>
-    </>
+    </Box>
   );
 };
 

@@ -31,7 +31,15 @@ const ProductCard = ({ product }) => {
           <Button
             variant='contained'
             onClick={addProductToCart}
-            sx={{ mx: 2, bgcolor: "black" }}
+            sx={{
+              mx: 2,
+              bgcolor: "#ff1d58",
+              fontWeight: "bold",
+              "&.MuiButtonBase-root:hover": {
+                bgcolor: "transparent",
+                color: "#ff1d58",
+              },
+            }}
           >
             Add to Cart
           </Button>
