@@ -8,18 +8,8 @@ const Authentication = () => {
     <>
       <div>
         <Grid container spacing={1}>
-          <Grid
-            xs={12}
-            md={5}
-            sx={{
-              height: "100%",
-            }}
-            className='bg-img'
-          >
+          <Grid xs={12} md={12}>
             <SignInForm />
-          </Grid>
-          <Grid xs={12} md={6} sx={{}}>
-            <SignUpForm />
           </Grid>
         </Grid>
       </div>
