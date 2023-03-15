@@ -55,14 +55,13 @@ const Contact = () => {
                 sx={{
                   color: "teal",
                   fontWeight: "bold",
-                  p: 2,
-                  m: 2,
+
                   fontWeight: "bold",
                 }}
               >
                 Talk to a mamber of our sales Team
               </Typography>
-              <Typography sx={{ p: 2 }}>
+              <Typography sx={{}}>
                 We'll help you to find the right product.
               </Typography>
               <Button
