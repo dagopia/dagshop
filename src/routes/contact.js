@@ -46,7 +46,7 @@ const Contact = () => {
             >
               <Typography
                 variant='h3'
-                sx={{ color: "#F65A83", fontWeight: "bold", m: 2 }}
+                sx={{ color: "#F65A83", fontWeight: "bold", m: 2, p: 1 }}
               >
                 Contact Us
               </Typography>
@@ -55,13 +55,16 @@ const Contact = () => {
                 sx={{
                   color: "teal",
                   fontWeight: "bold",
-
+                  p: 2,
+                  m: 2,
                   fontWeight: "bold",
                 }}
               >
                 Talk to a mamber of our sales Team
               </Typography>
-              <Typography>We'll help you to find the right product.</Typography>
+              <Typography sx={{ p: 2 }}>
+                We'll help you to find the right product.
+              </Typography>
               <Button
                 variant='contained'
                 aria-owns={open ? "mouse-over-popover" : undefined}
@@ -70,7 +73,7 @@ const Contact = () => {
                 onMouseLeave={handlePopoverClose}
                 sx={{
                   bgcolor: "#F65A83",
-                  my: 2,
+                  my: 1,
 
                   color: "White",
                   fontWeight: "bold",
