@@ -15,6 +15,7 @@ const CardForHomePage = () => {
           alignItems: "center",
           backgroundColor: "teal",
           mt: 10,
+          mx: 1,
           p: 2,
           width: "40%",
           borderRadius: "5px",

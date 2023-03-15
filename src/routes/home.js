@@ -56,7 +56,7 @@ const Home = () => {
   return (
     <>
       <CardForHomePage />
-      <Box className='catagories-container' sx={{ my: 10 }}>
+      <Box className='catagories-container' sx={{ my: 3 }}>
         <Outlet />
         {catagories.map(({ title, id, imageUrl }) => (
           <Paper className='Catagory-container' key={id}>
