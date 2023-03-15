@@ -21,7 +21,7 @@ const Contact = () => {
 
   const open = Boolean(anchorEl);
   return (
-    <Box sx={{ p: 2, m: 2 }}>
+    <Box sx={{ p: 4, m: 4, width: "100%" }}>
       <Box
         sx={{
           display: "flex",
