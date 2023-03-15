@@ -2,7 +2,7 @@ import { Outlet, Link } from "react-router-dom";
 import { Fragment, useContext } from "react";
 import Dlogo from "../assets/letter-d.svg";
 import LocalMallIcon from "@mui/icons-material/LocalMall";
-// import { ReactComponent as Dlogo } from "../assets/Dlogo.webp";
+
 import { UserContext } from "../context/user.context";
 import "../routes/nav.style.scss";
 import { signOutUser } from "../utils/Firebase";
