@@ -41,6 +41,7 @@ const Contact = () => {
                 flexDirection: "column",
                 alignItems: "center",
                 justifyContent: "center",
+                width: "100%",
               }}
             >
               <Typography
