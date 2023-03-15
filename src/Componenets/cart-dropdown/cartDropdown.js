@@ -5,6 +5,7 @@ import "./cartDropDown.scss";
 import CartItem from "../cart/cartItem";
 import { useContext } from "react";
 import { CartContext } from "../../context/cart.context";
+
 const CartDropdown = () => {
   const { cartItems } = useContext(CartContext);
   const navigate = useNavigate();
