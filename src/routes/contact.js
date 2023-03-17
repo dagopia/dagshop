@@ -138,6 +138,22 @@ const Contact = () => {
                   <FavoriteIcon sx={{ m: 1, color: "red" }} />
                 </Link>
               </Box>
+              <Box
+                sx={{ m: 2, p: 2, display: "flex", flexDirection: "column" }}
+              >
+                <textarea rows={5}>If you have any comments</textarea>
+                <Button
+                  variant='outlined'
+                  size='small'
+                  sx={{
+                    my: 1,
+                    color: "#F65A83",
+                    fontWeight: "bold",
+                  }}
+                >
+                  Comment
+                </Button>
+              </Box>
             </Paper>
           </Grid>
         </Grid>
