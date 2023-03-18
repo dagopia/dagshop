@@ -141,7 +141,9 @@ const Contact = () => {
               <Box
                 sx={{ m: 2, p: 2, display: "flex", flexDirection: "column" }}
               >
-                <textarea rows={5}>If you have any comments</textarea>
+                <textarea rows={5} column={6}>
+                  If you have any comments
+                </textarea>
                 <Button
                   variant='outlined'
                   size='small'
