@@ -8,7 +8,6 @@ const CatagoryPriview = ({ title, products }) => {
   return (
     <div className='category-preview-container'>
       <h2>
-        //box for....
         <Box
           className='title'
           to={title}

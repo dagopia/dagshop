@@ -1,7 +1,6 @@
 import { Box, Paper } from "@mui/material";
 import { Outlet } from "react-router";
 import { DescriptionCard } from "../Componenets/card";
-import CardForHomePage from "../Componenets/CardForHomePage";
 const Home = () => {
   const catagories = [
     {
@@ -55,7 +54,6 @@ const Home = () => {
   ];
   return (
     <>
-      <CardForHomePage />
       <Box className='catagories-container' sx={{ my: 3 }}>
         <Outlet />
         {catagories.map(({ title, id, imageUrl }) => (
